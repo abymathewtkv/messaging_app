@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:messagingapp/widget/widget.dart';
 
 class SignIn extends StatefulWidget {
+  const SignIn({Key? key}) : super(key: key);
+
   @override
   _SignInState createState() => _SignInState();
 }
@@ -12,29 +14,45 @@ class _SignInState extends State<SignIn> {
     return Scaffold(
       appBar: appBarMain(context),
       body: Container(
-        padding: EdgeInsets.symmetric(horizontal: 24.0),
+        padding: const EdgeInsets.symmetric(horizontal: 24.0),
         child: Column(
-          children: const <Widget>[
+          children: <Widget>[
             TextField(
-              decoration: InputDecoration(
-                hintText: 'email',
-                hintStyle: TextStyle(
-                  color: Colors.white54,
-                ),
-                focusedBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(color: Colors.white)
-                ),
-                enabledBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(color: Colors.white),
-                ),
-              ),
+              decoration: textFieldInputDecoration("username"),
+              style: simpleTextStyle(),
             ),
             TextField(
-              decoration: InputDecoration(
-                hintText: 'password',
+              style: simpleTextStyle(),
+              decoration: textFieldInputDecoration("password"),
+            ),
+            const SizedBox(
+              height: 8.0,
+            ),
+            Container(
+              alignment: Alignment.centerRight,
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 16,vertical: 8.0),
+                child: Text("Forgot Password?",style: simpleTextStyle(),),
               ),
             ),
-
+            const SizedBox(
+              height: 8.0,
+            ),
+            Container(
+              alignment: Alignment.center,
+              width: MediaQuery.of(context).size.width,
+              padding: const EdgeInsets.symmetric(vertical: 20.0),
+              decoration:  BoxDecoration(
+                gradient: const LinearGradient(
+                colors: [
+                  Color(0xff007EF4),
+                  Color(0xff2A75BC),
+                ],
+                ),
+                borderRadius: BorderRadius.circular(30.0)
+              ),
+              child: const Text("Sign in",style: TextStyle(color: Colors.white,fontSize: 17.0),) ,
+            ),
           ],
         ),
       ),

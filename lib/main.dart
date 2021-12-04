@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:messagingapp/views/signin.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        scaffoldBackgroundColor: Color(0xff1F1F1F),
+        scaffoldBackgroundColor: const Color(0xff1F1F1F),
         primarySwatch: Colors.blue,
       ),
       home: SignIn(),
