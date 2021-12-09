@@ -53,6 +53,29 @@ class _SignInState extends State<SignIn> {
               ),
               child: const Text("Sign in",style: TextStyle(color: Colors.white,fontSize: 17.0),) ,
             ),
+            SizedBox(
+              height: 16,
+            ),
+            Container(
+              alignment: Alignment.center,
+              width: MediaQuery.of(context).size.width,
+              padding: const EdgeInsets.symmetric(vertical: 20.0),
+              decoration:  BoxDecoration(
+                color: Colors.white,
+                  borderRadius: BorderRadius.circular(30.0)
+              ),
+              child: const Text("Sign in with Google",style: TextStyle(color: Colors.black87,fontSize: 17.0),) ,
+            ),
+            SizedBox(
+              height: 16,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text("Don't have account? ",style: TextStyle(color: Colors.white,fontSize: 17),),
+                Text("Register now",style: TextStyle(color: Colors.white,fontSize: 17),),
+              ],
+            ),
           ],
         ),
       ),
