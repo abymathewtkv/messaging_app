@@ -23,7 +23,7 @@ class _SignInState extends State<SignIn> {
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
                 TextField(
-                  decoration: textFieldInputDecoration("username"),
+                  decoration: textFieldInputDecoration("email"),
                   style: simpleTextStyle(),
                 ),
                 TextField(
