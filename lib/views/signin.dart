@@ -62,7 +62,7 @@ class _SignInState extends State<SignIn> {
                   style: TextStyle(color: Colors.white, fontSize: 17.0),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
               Container(
@@ -77,12 +77,12 @@ class _SignInState extends State<SignIn> {
                   style: TextStyle(color: Colors.black87, fontSize: 17.0),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
+                children: const <Widget>[
                   Text(
                     "Don't have account? ",
                     style: TextStyle(color: Colors.white, fontSize: 17),
@@ -98,7 +98,7 @@ class _SignInState extends State<SignIn> {
 
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
             ],
